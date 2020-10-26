@@ -12,15 +12,15 @@ describe('validator', () => {
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid(4083952015263)).toBe(true);
     });
 
     it.skip('debería retornar true para "79927398713"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid(79927398713)).toBe(true);
     });
 
     it.skip('debería retornar false para "1234567890"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid(1234567890)).toBe(false);
     });
   });
 
@@ -30,15 +30,15 @@ describe('validator', () => {
     });
 
     it.skip('Debería retornar "############5616" para "4556364607935616"', () => {
-      // escribe aquí tu test
+      expect(validator.maskify("4556364607935616").toBe(true))
     });
 
     it.skip('Debería retornar "1" para "1"', () => {
-      // escribe aquí tu test
+      expect(validator.maskify("1").toBe(false))
     });
 
     it.skip('Debería retornar "######orld" para "helloworld"', () => {
-      // escribe aquí tu test
+      expect(validator.maskify("helloworld").toBe(true))
     });
   });
 });

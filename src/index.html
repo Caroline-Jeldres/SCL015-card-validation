@@ -2,13 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de crédito válida</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    
+<!--pagina de inicio  -->
+<div id="primera_pagina">
+    <center>
+      <div class="titulo_inicio"> <p>Validación de tarjeta</p></div>
+      <div class="mensaje"><p> Verifica si tu tarjeta puede subscribirse en el streaming </p>
+      </div>
+      <div>
+        <img src="imagenes/boton_entrar.png" alt="boton_entrada" id="boton_inicio" >
+        <img class="logo_tarjetas" src="imagenes/logo_tarjetas.png" alt="Logo_tarjeta">             
+      </div>
+    </center>
+</div>
+<!-- Segunda pagina ingresar datos -->
+<div id="segunda_pagina">
+    <center>
+    <div class="datos"> <p>Ingreso de Datos</p></div>
+    <div class="ingreso_datos"> 
+      <input type="text" maxlength="18" id="nombre" placeholder="Ingrese nombre tarjeta" pattern="^[A-Z]+$" required>
+      <input type="text" minlength="1" maxlength="16" id="numero_tarjeta" placeholder="Ingrese número de tarjeta"  required>
+      <button id="boton_enviar" type="button" >Enviar</button>
+      <input type="text" id="fecha_expiracion" maxlength="7" placeholder="Fecha" />
+      <input type="password" id="cvv" placeholder="CVV"  minlength="1" maxlength="3">
+    </div>
+    </center>
+</div>
+<!-- Tercera pagina resultados -->
+<div id="tercera_pagina">
+  <center>
+    <div class="resultados">
+      <p>Resultados</p>
+    </div>
+    <div id="resultados_datos">
+    </div>
+    <div class="boton_volver">
+      <button id="volver" type="button"  >Volver</button>
+      <button id="salir" type="button" >Salir</button>
+    </div>
+  </center>
+
+</div>  
+
+</body>
+<script src="index.js" type="module"></script>
+  <!-- <script src="index.js" type="module"></script> -->
 </html>
+

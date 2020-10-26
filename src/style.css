@@ -1,0 +1,307 @@
+body{
+    background: url("imagenes/fondo_verde.jpg");
+    opacity: 0.9;
+}
+.titulo_inicio{
+    position: absolute;
+    width: 717px;
+    height: 100px;
+    left: 351px;
+    top: 30px;
+    background: #52b788;
+    opacity: 0.9;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 83px;
+}    
+.titulo_inicio p{
+
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 81px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin: 10px;
+    -webkit-text-stroke: 1px white;
+    color: #FFFFFF;
+}
+.mensaje{
+    position: absolute;
+    width: 823px;
+    height: 90px;
+    left: 305px;
+    top: 180px;
+    background: #55a630;
+    opacity: 0.9;
+    border-radius: 113.5px;
+}    
+.mensaje p{
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    text-align: center;
+    margin: 30px;
+    color: #eeef20;
+    backdrop-filter: blur(4px);
+}
+#boton_inicio{
+    position: absolute;
+    width: 206px;
+    height: 68px;
+    left: 613px;
+    top: 390px;
+    cursor: pointer;
+
+}
+.logo_tarjetas{
+    position: absolute;
+    width: 182px;
+    height: 80px;
+    left: 625px;
+    top: 500px;
+}
+#segunda_pagina{
+    display: none;
+}
+.datos{
+    position: absolute;
+    width: 717px;
+    height: 100px;
+    left: 351px;
+    top: 30px;
+    background: #52b788;
+    opacity: 0.9;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 83px;
+}    
+.datos p{
+
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 81px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin: 10px;
+    -webkit-text-stroke: 1px white;
+    color: #FFFFFF;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] { 
+    -moz-appearance:textfield; 
+}
+#nombre{
+    position: absolute;
+    width: 323px;
+    height: 47px;
+    right: 330px;
+    top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 127px;
+    text-transform: uppercase;
+}
+
+#nombre::placeholder { 
+    color: rgba(10, 9, 9, 0.651);
+    padding-left: 5px;
+    text-align:center;
+}
+#numero_tarjeta{
+    position: absolute;
+    width: 323px;
+    height: 47px;
+    right: 330px;
+    top: 150px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 127px;
+}
+#numero_tarjeta::placeholder { 
+    color: rgba(10, 9, 9, 0.651);
+    padding-left: 5px;
+    text-align:center;
+}
+#fecha_expiracion{
+    position: absolute;
+    width: 100px;
+    height: 47px;
+    right: 130px;
+    top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 127px;
+    text-transform: uppercase;
+}
+#cvv{
+    position: absolute;
+    width: 100px;
+    height: 47px;
+    right: 130px;
+    top: 150px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 127px;
+    text-transform: uppercase;
+}
+
+.ingreso_datos{
+    position: absolute;
+    width: 792px;
+    height: 251px;
+    left: 310px;
+    top: 199px;
+    background: #55a630;
+    opacity: 1;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 127px;
+
+}
+#boton_enviar{
+    position: absolute;
+    right: 290px;
+    top: 300px;
+    width: 206px;
+    background: #52b788;
+    border: 1px solid #000000;
+    border-radius: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 68px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #eeef20;
+    cursor: pointer;
+}
+#tercera_pagina{
+    display: none;
+}
+.resultados{
+    position: absolute;
+    width: 717px;
+    height: 100px;
+    left: 371px;
+    top: 30px;
+    background: #52b788;
+    opacity: 0.9;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 83px;
+}    
+.resultados p{
+
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 81px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin: 10px;
+    -webkit-text-stroke: 1px white;
+    color: #FFFFFF;
+}
+#resultados_datos{
+    position: absolute;
+    width: 823px;
+    height: 200px;
+    left: 257px;
+    top: 200px;
+    background: #55a630;
+    opacity: 0.9;
+    border-radius: 113.5px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 65px;
+    text-align: center;
+    margin: 60px;
+    color: white;
+    backdrop-filter: blur(4px);
+}
+#tercera_pagina{
+    display: none;
+}
+#volver{
+    position: absolute;
+    right: 760px;
+    top: 500px;
+    width: 206px;
+    background: #52b788;
+    border: 1px solid #000000;
+    border-radius: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 68px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #eeef20;
+    cursor: pointer;
+}
+#salir{
+    position: absolute;
+    right: 300px;
+    top: 500px;
+    width: 206px;
+    background: #52b788;
+    border: 1px solid #000000;
+    border-radius: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 68px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #eeef20;
+    cursor: pointer;
+}
+
+
+
