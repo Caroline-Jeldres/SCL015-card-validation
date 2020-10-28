@@ -10,6 +10,7 @@ const validator = {
   },
   isValid: (validacion) => {
 
+    // eslint-disable-next-line no-unused-vars
     let retorno = false;
     //se comienza a numerar el largo de la tarjeta desde cero
     let suma = 0;
@@ -18,7 +19,7 @@ const validator = {
       //se obtiene un nuemro en la posicion i de la cadena del numero de tarjeta
       let numero = parseInt(validacion.charAt(i));
       //determina si la variable i contiene un numero par
-      if (i % 2 == 0) {
+      if (i % 2 !== 0) {
         //Se multiplican los pares por dos//
         let multiplica = numero * 2;
         if (multiplica > 9) { //los resultados mayores a 9, se la aplica un toString q los separa y los suma uno con el otro
@@ -35,18 +36,13 @@ const validator = {
     //determina si la suma es multiplo de 10 (termina en cero)
     if (suma % 10 == 0) {
       retorno = true;
-    }
-    if (retorno===true){
-      return "<strong>VALIDA"
+      return true, ("VALIDA")
     }
     else {
-      return "<strong>INVALIDA"
+      return false, ("INVALIDA")
     }
-    
-    }
-
   }
-
+}
 
 
 

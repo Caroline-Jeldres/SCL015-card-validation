@@ -26,7 +26,7 @@ document.getElementById("boton_enviar").onclick = function () {
         document.getElementById("segunda_pagina").style.display = "none";
         document.getElementById("tercera_pagina").style.display = "block";
 
-        document.getElementById("resultados_datos").innerHTML = nombre.toUpperCase()+ "<br>la tarjeta ingresada número " + validator.maskify(numero_tarjeta) + "<br>es "+validator.isValid(numero_tarjeta)
+        document.getElementById("resultados_datos").innerHTML = nombre.toUpperCase()+ "<br>la tarjeta ingresada número " + validator.maskify(numero_tarjeta) + "<br>es <strong>"+validator.isValid(numero_tarjeta)
 
     }
     else {
