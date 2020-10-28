@@ -15,6 +15,14 @@ body{
     backdrop-filter: blur(4px);
     border-radius: 83px;
 }    
+.logo_star{
+    position: absolute;
+    width: 184px;
+    height: 148px;
+    left: 980px;
+    top: 16px;
+    transform: rotate(23deg);
+}
 .titulo_inicio p{
 
     font-family: 'Libre Baskerville', serif;
@@ -44,9 +52,8 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 31px;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     color: #eeef20;
     backdrop-filter: blur(4px);
 }
