@@ -1,10 +1,13 @@
-# Tarjeta de crédito válida
+# StarStreaming
+#### Tu página de Streming de videosjuegos
+
+![Logo](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/logo.png?raw=true)
 
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [2. Resumen del producto](#2-resumen-del-producto)
+* [3. Objetivos de aprendizaje](#3-Prototipo en Papel)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
@@ -13,42 +16,32 @@
 
 ## 1. Preámbulo
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+Disfruta tus Gameplay favoritos, antes que los demás contratando la subscripción de nuestros servicios, 
+con nuestra plataforma de validación segura, podrás evitar la filtración de tus datos.
+Unete a nuestro salon VIP! tienes 30 días de prueba y puedes cancelar tu subscripción en cualquier momento.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+## 2. Resumen del producto
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+**StarStreaming** Es una plataforma streaming la cual permite a los usuarios, visualizar videos en vivo y en alta calidad,
+de las tematicas más buscadas para el mundo geek (gameplays, anime, tecnology, robotics, Cfi). Nuestros clientes VIP con subscripción mensual, les permite ingresar a contenido exclusivo streaming, que no encontraras en el modo free.
 
-## 2. Resumen del proyecto
+Para lo cual nuestro validador es la solución para que nuestros usuarios, puedan validar su tarjeta para el proceso de subcripción.
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+## 3. Prototipo en Papel
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+![Prototipo Papel 1](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/prototipo1.jpeg?raw=true)
 
-## 3. Objetivos de aprendizaje
+![Prototipo Papel 2](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/prototipo2.jpeg?raw=true)
 
-Aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+![Prototipo Papel 3](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/prototipo3.jpeg?raw=true)
 
-### HTML y CSS
+### 4. Prototipo Figma 
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+![Prototipo Figma 1](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/primeraPagina.png?raw=true)
+
+![Prototipo Figma 2](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/segundaPagina.png?raw=true)
+
+![Prototipo Figma 3](https://github.com/Caroline-Jeldres/SCL015-card-validation/blob/desarrollo/imgReadme/terceraPagina.png?raw=true)
 
 ### DOM
 
