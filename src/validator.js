@@ -16,7 +16,7 @@ const validator = {
     let posicion = 0;
     // parseInt castea el numero de tarjeta que viene declarado como texto a un numero entero 
     let numeroTarjeta = parseInt(validacion)
-    // while se ejecuta hasta que numero de tarjeta valga 0, para ello se divide por 10 en cada vuelta y se castea como 0
+    // while se ejecuta hasta que numero de tarjeta valga 0, para ello se divide por 10 en cada vuelta hasta que llegue 0
     while (numeroTarjeta != 0) {
       // se le saca el residuo de la division por 10 y este nos entrega el ultimo digito del numero de tarjeta
       let numero = numeroTarjeta % 10;
