@@ -23,11 +23,17 @@ document.getElementById("boton_enviar").onclick = function () {
     let cvv = document.getElementById("cvv").value
 
     if (nombre != "" && numero_tarjeta != "" && fecha != "" && cvv != "") {
-        document.getElementById("segunda_pagina").style.display = "none";
+       
+        if (numero_tarjeta.length===16) {
+            document.getElementById("segunda_pagina").style.display = "none";
         document.getElementById("tercera_pagina").style.display = "block";
 
         document.getElementById("resultados_datos").innerHTML = nombre.toUpperCase()+ "<br>la tarjeta ingresada número " + validator.maskify(numero_tarjeta) + "<br>es <strong>"+validator.isValid(numero_tarjeta)
-
+            
+        }
+        else {
+            alert("Número de tarjeta debe ser de 16 digitos")
+        }
     }
     else {
         alert("Faltan ingresar datos")
@@ -98,4 +104,3 @@ document.getElementById("numero_tarjeta").addEventListener("keydown", e => {
 
 
 // eslint-disable-next-line no-console
-console.log(validator);

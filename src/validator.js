@@ -10,16 +10,18 @@ const validator = {
   },
   isValid: (validacion) => {
 
-    // eslint-disable-next-line no-unused-vars
-    let retorno = false;
     //se comienza a numerar el largo de la tarjeta desde cero
     let suma = 0;
-    //Se crea un for que recorre el largo de la numero de la tarjeta obteniendo un numero en cada posicion//
-    for (let i = 0; i < validacion.length; i++) {
-      //se obtiene un nuemro en la posicion i de la cadena del numero de tarjeta
-      let numero = parseInt(validacion.charAt(i));
-      //determina si la variable i contiene un numero par
-      if (i % 2 !== 0) {
+    //marca la posición que comienza en 0
+    let posicion = 0;
+    // parseInt castea el numero de tarjeta que viene declarado como texto a un numero entero 
+    let numeroTarjeta = parseInt(validacion)
+    // while se ejecuta hasta que numero de tarjeta valga 0, para ello se divide por 10 en cada vuelta y se castea como 0
+    while (numeroTarjeta != 0) {
+      // se le saca el residuo de la division por 10 y este nos entrega el ultimo digito del numero de tarjeta
+      let numero = numeroTarjeta % 10;
+      // como va de derecha a izquierda contado la posición, la posicion es inversa ejemplo: la posicion 15 pasa a ser posición 0
+      if (posicion % 2 != 0) {
         //Se multiplican los pares por dos//
         let multiplica = numero * 2;
         if (multiplica > 9) { //los resultados mayores a 9, se la aplica un toString q los separa y los suma uno con el otro
@@ -27,19 +29,21 @@ const validator = {
           multiplica = parseInt(multiplicaString.charAt(0)) + parseInt(multiplicaString.charAt(1));
 
         }
-        suma = suma + multiplica;
-
+        suma += multiplica;
+        // suma es igual a los numeros en posiciones impares y los numeros en posiciones pares (que tenian dos)
       } else {
-        suma = suma + numero;
+        suma += numero;
       }
+      numeroTarjeta = parseInt(numeroTarjeta / 10)
+      // incrementa la variable posicion en 1 por cada vuelta hasta que se cumpla la condicion del while que valga 0
+      posicion++;
     }
-    //determina si la suma es multiplo de 10 (termina en cero)
-    if (suma % 10 == 0) {
-      retorno = true;
-      return true, ("VALIDA")
+    if (suma% 10 == 0) {
+      return "VALIDA"
     }
     else {
-      return false, ("INVALIDA")
+
+      return "INVALIDA"
     }
   }
 }
@@ -47,3 +51,23 @@ const validator = {
 
 
 export default validator;
+
+// for (let i = 0; i < validacion.length; i++) {
+    //   //se obtiene un nuemro en la posicion i de la cadena del numero de tarjeta
+    //   let numero = parseInt(validacion.charAt(i));
+    //   //determina si la variable i contiene un numero par
+    //   if (i % 2 == 0) {
+    //     //Se multiplican los pares por dos//
+    //     let multiplica = numero * 2;
+    //     if (multiplica > 9) { //los resultados mayores a 9, se la aplica un toString q los separa y los suma uno con el otro
+    //       let multiplicaString = multiplica.toString();
+    //       multiplica = parseInt(multiplicaString.charAt(0)) + parseInt(multiplicaString.charAt(1));
+
+    //     }
+    //     suma += multiplica;
+    //     // suma es igual a los numeros en posiciones impares y los numeros en posiciones pares (que tenian dos)
+    //   } else {
+    //     suma += numero;
+    //   }
+    // }
+    //determina si la suma es multiplo de 10 (termina en cero)
