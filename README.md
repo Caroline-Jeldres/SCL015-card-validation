@@ -56,4 +56,4 @@ Al inicio del prototipado, se solicito feedback a mis amigos cercanos y familia,
 
 A continuación presento un video, mostrando la funcionalidades de nuestro producto, como diseño.
 
-![Producto Final](https://www.loom.com/share/178c4d9d5c3449b0a0ba5eec4894e901)
+![Producto Final](https://www.loom.com/share/178c4d9d5c3449b0a0ba5eec4894e901?raw=true)
