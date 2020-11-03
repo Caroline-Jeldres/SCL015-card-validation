@@ -5,27 +5,21 @@ describe('validator', () => {
   it('debería ser un objeto', () => {
     expect(typeof validator).toBe('object');
   });
-
   describe('validator.isValid', () => {
     it('debería ser una función', () => {
       expect(typeof validator.isValid).toBe('function');
     });
-    // test('debería retornar true para "4137894711755904"', () => {
-      // validator.isValid(validator.isValid('true'), "4137894711755904");
     it('debería retornar "VALIDA" para "4083952015263"', () => {
       expect(validator.isValid("4083952015263")).toBe("VALIDA");
     });
-
     it('debería retornar "VALIDA" para "79927398713"', () => {
       expect(validator.isValid("79927398713")).toBe("VALIDA");
     });
-
     it('debería retornar "INVALIDA" para "1234567890"', () => {
       expect(validator.isValid("1234567890")).toBe("INVALIDA");
     });
   });
-  
-  describe('validator.maskify', () => {
+    describe('validator.maskify', () => {
     it('debería ser una función', () => {
       expect(typeof validator.maskify).toBe('function');
     });

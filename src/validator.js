@@ -27,7 +27,6 @@ const validator = {
         if (multiplica > 9) { //los resultados mayores a 9, se la aplica un toString q los separa y los suma uno con el otro
           let multiplicaString = multiplica.toString();
           multiplica = parseInt(multiplicaString.charAt(0)) + parseInt(multiplicaString.charAt(1));
-
         }
         suma += multiplica;
         // suma es igual a los numeros en posiciones impares y los numeros en posiciones pares (que tenian dos)
@@ -47,8 +46,5 @@ const validator = {
     }
   }
 }
-
-
-
 export default validator;
 
