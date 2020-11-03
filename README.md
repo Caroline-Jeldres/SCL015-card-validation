@@ -54,6 +54,7 @@ Al inicio del prototipado, se solicito feedback a mis amigos cercanos y familia,
 
 ## 6. Producto final 
 
-A continuación presento un video, mostrando la funcionalidades de nuestro producto, como diseño.
+A continuación presento el link del proyecto, mostrando la funcionalidades de nuestro producto, como diseño.
 
-[![Producto Final](http://img.youtube.com/vi/mP442fIeylg/0.jpg)](https://youtu.be/mP442fIeylg)
+
+[![Producto Final](http://img.youtube.com/vi/mP442fIeylg/0.jpg)](https://caroline-jeldres.github.io/SCL015-card-validation/src/index.html)
